@@ -65,6 +65,7 @@ class _HotnewsCategoryState extends State<HotnewsCategory> {
               itemBuilder: (context, index) {
                 final article = _articles[index]['data'];
                 // final bool isSaved = savedItems.contains(article);
+                
                 final isBookmarked = _articles[index]['isBookmarked'];
                 return ListTile(
                   trailing: IconButton(
